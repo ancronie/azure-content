@@ -28,9 +28,14 @@ You do not have anything to add. `EngagementReach` references and resources are 
 
 ##Enable the Windows Notification Service
 
-In order to use the **Windows Notification Service** (referred as WNS) in your `Package.appxmanifest` file on `Application UI` click on `All Image Assets` in the left bot box. At the right of the box in `Notifications`, change `toast capable` from `(not set)` to `(Yes)`.
+In order to use the **Windows Notification Service** (referred as WNS) in your `Package.appxmanifest` file on `Application` click on `All Image Assets` in the left bot box. At the right of the box in `Notifications`, change `toast capable` from `(not set)` to `Yes`.
 
 Moreover, you need to synchronize your app to your Microsoft account and to the engagement platform. For this you need to create an account or log on [windows dev center](https://dev.windows.com). After that create a new application and find the SID and secret key. On the engagement frontend, go on your app setting in `native push` and paste your credentials. After that, right click on your project, select `store` and `Associate App with the Store...`. You just need to select the application you have create before to synchronize it.
+
+After this actions you need to add a declaration for Background Tasks in your `Package.appxmanifest` file on `Declarations` in `Available Declarations` select `Background Tasks` under `Properties` check `Push notification` and in `Entry point` add `EngagementBackgroundTasks.RawNotificationBackgroundTask`. This will enable the SDK to run in background and be able to manage push when application is closed.
+
+When you have end this step you need to go under `Application` in your manifest and in `Notification` setup `Lock screen notifications` to Badge. This will prompt you a red cross on `Visual Assets`, now you need to add an image for your badge logo.
+
 
 ##Initialize the Engagement Reach SDK
 
