@@ -18,9 +18,14 @@
 
 #Windows Universal Apps SDK Release Notes
 
+##3.2.0 (07/23/2015)
+
+-   Mobile Engagement reach now run in background to manages push.
+-   Some views have been updated for notification and contents.
+
 ##3.1.0 (05/21/2015)
 
--   The Mobile Engagement device id is now based on a GUID generated at installation time
+-   The Mobile Engagement device id is now based on a GUID generated at installation time.
 
 ##3.0.1 (04/29/2015)
 

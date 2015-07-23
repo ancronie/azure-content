@@ -177,6 +177,10 @@ The following sections will setup your app to receive them.
 
 	![][35]
 
+2. In order to use reach you have to add a declaration for Background Tasks in your `Package.appxmanifest` file on `Declarations` in `Available Declarations` select `Background Tasks` and click the `Add` button under `Properties` check `Push notification` and in `Entry point` add  "EngagementBackgroundTasks.RawNotificationBackgroundTask". This will enable the SDK to run in background and to be able to process push when application is closed.
+
+3. After this step you need to go under `Application` in your manifest and in `Notification` setup `Lock screen notifications` to Badge. This will prompt you a red cross on `Visual Assets`, now you need to add an image for your badge logo with a red.
+
 ###Initialize the REACH SDK
 
 1. In `App.xaml.cs`, call `EngagementReach.Instance.Init();` in the `OnLaunched` function right after the agent initialization:
