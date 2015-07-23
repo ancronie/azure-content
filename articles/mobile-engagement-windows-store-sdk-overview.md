@@ -35,8 +35,8 @@ Click to see the [SDK Content](mobile-engagement-windows-store-sdk-content.md)
 ##3.2.0 (07/23/2015)
 
 -   Toasts are now created on the SDK side.
--   Mobile Engagement reach now run in background to manages push.
--   Some views have been updated for notification and contents.
+-   Mobile Engagement reach now also process push in background.
+-   Some views have been updated for notifications and contents.
 
 For earlier version please see the [complete release notes](mobile-engagement-windows-store-release-notes.md)
 
