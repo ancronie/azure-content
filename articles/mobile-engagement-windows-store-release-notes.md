@@ -20,8 +20,9 @@
 
 ##3.2.0 (07/23/2015)
 
--   Mobile Engagement reach now run in background to manages push.
--   Some views have been updated for notification and contents.
+-   Toasts are now created on the SDK side.
+-   Mobile Engagement reach now also process push in background.
+-   Some views have been updated for notifications and contents.
 
 ##3.1.0 (05/21/2015)
 

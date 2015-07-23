@@ -25,7 +25,7 @@ You may have to follow several procedures if you missed several versions of the 
 ##From 3.0.0 to 3.2.0
 
 ### Reach
-In order to use reach you have to add a declaration for Background Tasks in your `Package.appxmanifest` file on `Declarations` in `Available Declarations` select `Background Tasks` and click the `Add` button under `Properties` check `Push notification` and in `Entry point` add  "EngagementBackgroundTasks.RawNotificationBackgroundTask". This will enable the SDK to run in background and to be able to process push when application is closed.
+In order to use reach you have to add a declaration for Background Tasks in your `Package.appxmanifest` file on `Declarations` in `Available Declarations` select `Background Tasks` and click the `Add` button. Under `Properties` check `Push notification` and in `Entry point` add  "EngagementBackgroundTasks.RawNotificationBackgroundTask". This will enable the SDK to run in background and to be able to process push when application is closed.
 
 After this step you need to go under `Application` in your manifest and in `Notification` setup `Lock screen notifications` to Badge. This will prompt you a red cross on `Visual Assets`, now you need to add an image for your badge logo with a red.
 
