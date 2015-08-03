@@ -32,7 +32,7 @@ Click to see the [SDK Content](mobile-engagement-windows-store-sdk-content.md)
 
 ##Release notes
 
-##3.2.0 (07/23/2015)
+###4.0.0 (07/23/2015)
 
 -   Toasts are now created on the SDK side.
 -   Mobile Engagement reach now also process push in background.
@@ -46,9 +46,9 @@ If you already have integrated an older version of Engagement into your applicat
 
 You may have to follow several procedures if you missed several versions of the SDK see the complete [Upgrade Procedures](mobile-engagement-windows-store-upgrade-procedure.md). For example if you migrate from 0.10.1 to 0.11.0 you have to first follow the "from 0.9.0 to 0.10.1" procedure then the "from 0.10.1 to 0.11.0" procedure.
 
-##From 3.0.0 to 3.2.0
+###From 3.0.0 to 4.0.0
 
-### Reach
+#### Reach
 In order to use reach you have to add a declaration for Background Tasks in your `Package.appxmanifest` file on `Declarations` in `Available Declarations` select `Background Tasks` and click the `Add` button. Under `Properties` check `Push notification` and in `Entry point` add  "EngagementBackgroundTasks.RawNotificationBackgroundTask". This will enable the SDK to run in background and to be able to process push when application is closed.
 
 After this step you need to go under `Application` in your manifest and in `Notification` setup `Lock screen notifications` to Badge. This will prompt you a red cross on `Visual Assets`, now you need to add an image for your badge logo with a red.
