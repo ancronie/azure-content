@@ -44,7 +44,7 @@ Then you need to add a declaration for Background Tasks in your `Package.appxman
  
 This will enable the SDK to run in background and to be able to process push when application is closed.
 
-After this step you need to go under `Application` in your manifest and in `Notification` setup `Lock screen notifications` to Badge. This will prompt you a red cross on `Visual Assets`, now you need to add an image for your badge logo in each field with a red cross.
+After this step you need to go under `Application` in your manifest and in `Notification` setup `Lock screen notifications` to Badge. In `Visual Assets`, now you need to add an image for your badge logo for each field with a red cross.
 
 
 ##Initialize the Engagement Reach SDK
